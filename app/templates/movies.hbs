@@ -1,0 +1,11 @@
+{{outlet}}
+<h2>List of Movies</h2>
+<button class="prev" id="prev">Previous</button>
+
+<ul>
+  {{#each model as |movie|}}
+    <!-- <li>{{movie.title}}</li> -->
+    <li><img src="http://localhost:3000/images/posters/{{movie.poster_filename}}"></li>
+  {{/each}}
+</ul>
+<button class="next" id="next">Next</button>
